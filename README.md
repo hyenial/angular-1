@@ -83,6 +83,27 @@ ng serve
 
 Angular is cross-platform, fast, scalable, has incredible tooling, and is loved by millions.
 
+### Linux npm setup And issue
+Try using this: On the command line, in your home directory, create a directory for global installations:
+
+```mkdir ~/.npm-global```
+
+Configure npm to use the new directory path:
+
+```npm config set prefix '~/.npm-global'```
+
+In your preferred text editor, open or create a ~/.profile file and add this line:
+
+```export PATH=~/.npm-global/bin:$PATH```
+
+On the command line, update your system variables:
+
+```source ~/.profile```
+
+Test installing package globally without using sudo. Now run ```npm install -g @angular/cli``` it should work.
+
+
+
 ## Quickstart
 
 [Get started in 5 minutes][quickstart].
