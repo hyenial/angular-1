@@ -92,7 +92,7 @@ Configure npm to use the new directory path:
 
 ```npm config set prefix '~/.npm-global'```
 
-In your preferred text editor, open or create a ~/.profile file and add this line:
+In your preferred text editor, open or create a ```~/.profile file``` and add this line:
 
 ```export PATH=~/.npm-global/bin:$PATH```
 
